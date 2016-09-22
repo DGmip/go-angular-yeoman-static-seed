@@ -1,0 +1,14 @@
+*.swo
+*.swp
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+ession.vim
+.netrwhist
+*~
+/node_modules
+/dist
+/.tmp
+/.sass-cache
+/bower_components
+ags
