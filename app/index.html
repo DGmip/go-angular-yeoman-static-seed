@@ -15,19 +15,18 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="frontendApp">
+  <body ng-app="frontendApp" layout='column'>
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <ul ng-controller="NavCtrl as nav">
+    <ul ng-controller="NavCtrl as nav" class="navigation">
       <li ng-repeat="link in nav.navigationLinks"><a ng-href="{{link.href}}">{{link.display}}</a></li>
       <p>{{nav.test}}</p>
     </ul>
 
-    <div>
-      <div ng-view=""></div>
-    </div>
+    <md-content class="md-padding" ng-view>
+    </md-content>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
