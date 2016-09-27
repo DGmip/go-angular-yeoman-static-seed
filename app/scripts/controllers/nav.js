@@ -23,5 +23,5 @@ angular.module('frontendApp')
 
     new NavigationLinksFact('Main', '#/');
     new NavigationLinksFact('About', '#/about');
-    new NavigationLinksFact('Modal', '#/modal');
+    new NavigationLinksFact('Upload banner image modal', '#/modal');
   });
