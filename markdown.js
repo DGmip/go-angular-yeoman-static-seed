@@ -10,7 +10,7 @@ var html = fs.readFileSync("markdown.html", "utf8",  function(err, data){
 });
 
 var md = (html2markdown(html));
-fs.writeFile("Readme.md", md, function(err) {
+fs.writeFile("README.md", md, function(err) {
   console.log( 'wrote file:', md );
   if (err) {
     console.log('It didn\'t work');

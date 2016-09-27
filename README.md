@@ -1,12 +1,32 @@
-# frontend
+# Go angular yeoman static seed
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.14.0.
+This is as seed for a static website hosted on appengine, which uses
 
-## Build & development
+* Yeoman
+* Grunt
+* Compass
+* Sass
+* nodejs
+* angularjs
+* angular-material
 
-Run `grunt` for building and `grunt serve` for preview.
+#### Installing
 
-## Testing
+$ git clone https://github.com/dgmip/seed
 
-Running `grunt test` will run the unit tests with karma.
+$ bower install && npm update
+
+$ grunt serve
+
+You should now have a development environment with live reload and a decent grunt worker
+
+#### Using the markdown tool
+
+To generate quick markdown for the Readme.md file, use node to build the file with the markdown.js script.
+
+Edit the markdown.html file, and then run
+
+$ node markdown.js
+
+This way you don't have remembar all the markdown syntax ;)
+
