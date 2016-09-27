@@ -17,6 +17,7 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngMaterial',
+    'ngMdIcons',
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -29,6 +30,11 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
+      })
+      .when('/modal', {
+        templateUrl: 'views/modal.html',
+        controller: 'ModalCtrl',
+        controllerAs: 'modal'
       })
       .otherwise({
         redirectTo: '/'

@@ -23,4 +23,5 @@ angular.module('frontendApp')
 
     new NavigationLinksFact('Main', '#/');
     new NavigationLinksFact('About', '#/about');
+    new NavigationLinksFact('Modal', '#/modal');
   });
