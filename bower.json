@@ -18,5 +18,5 @@
     "angular-material-icons": "^0.7.1"
   },
   "appPath": "app",
-  "moduleName": "frontendApp"
+  "moduleName": "appName"
 }

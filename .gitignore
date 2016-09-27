@@ -3,7 +3,7 @@
 [._]*.s[a-w][a-z]
 [._]s[a-w][a-z]
 *.un~
-ession.vim
+session.vim
 .netrwhist
 *~
 /node_modules
@@ -11,4 +11,4 @@ ession.vim
 /.tmp
 /.sass-cache
 /bower_components
-ags
+tags

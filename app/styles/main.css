@@ -1,8 +1,3 @@
-/* line 80, _colours.sass */
-.white {
-  color: white;
-}
-
 /* line 6, main.sass */
 .browsehappy {
   margin: 0.2em 0;
@@ -13,7 +8,7 @@
 
 /* line 12, main.sass */
 ul.navigation {
-  background-color: #4A4A51;
+  background-color: #999;
   padding: 20px;
 }
 /* line 15, main.sass */
@@ -26,11 +21,6 @@ ul.navigation li {
 ul.navigation li a {
   text-decoration: none;
   color: white;
-}
-
-/* line 24, main.sass */
-#brand-banner-modal h1 {
-  font-size: 0.9em;
 }
 
 /*# sourceMappingURL=main.css.map */

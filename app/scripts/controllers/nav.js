@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name frontendApp.controller:NavCtrl
+ * @name appName.controller:NavCtrl
  * @description
  * # NavCtrl
- * Controller of the frontendApp
+ * Controller of the appName
  */
-angular.module('frontendApp')
+angular.module('appName')
   .controller('NavCtrl', function () {
     var navigationLinks = [];
 
@@ -23,5 +23,4 @@ angular.module('frontendApp')
 
     new NavigationLinksFact('Main', '#/');
     new NavigationLinksFact('About', '#/about');
-    new NavigationLinksFact('Upload banner image modal', '#/modal');
   });

@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name frontendApp
+ * @name appName
  * @description
- * # frontendApp
+ * # appName
  *
  * Main module of the application.
  */
 angular
-  .module('frontendApp', [
+  .module('appName', [
     'ngAnimate',
     'ngAria',
     'ngCookies',
@@ -30,11 +30,6 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
-      })
-      .when('/modal', {
-        templateUrl: 'views/modal.html',
-        controller: 'ModalCtrl',
-        controllerAs: 'modal'
       })
       .otherwise({
         redirectTo: '/'

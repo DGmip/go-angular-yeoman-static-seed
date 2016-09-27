@@ -1,46 +1,20 @@
-application: ll-front-end
+# change this to your app id
+application: static-site-seed
 version: 1
 runtime: go
 api_version: go1
 
 handlers:
-  # Handle the main page by serving the index page.
-  # Note the $ to specify the end of the path, since app.yaml does prefix matching.
-  #
+
   - url: /$
     static_files: app/index.html
     upload: app/index.html
-  #
 
   - url: /bower_components
     static_dir: bower_components
-  #
+
   - url: /
     static_dir: app
-
-  # - url: /app/templates
-  #   static_dir: templates
-  #
-  # - url: /app/scripts
-  #   static_files: app/scripts/(.*)
-  #   upload: /app/scripts/(.*)
-  #
-  # - url: /app/styles
-  #   static_dir: styles
-  #
-
-  # - url: /app/views
-  #   static_files: views
-  #   upload: app/views/(.*)
-  # - url: /app/styles
-  #   static_files: styles
-  #   upload: app/styles/(.*)
-  # - url: /bower_components/(.*)/(.*)
-  #   static_files: bower_components/\1\/\2/(.*)
-  #   upload: bower_components/(.*)
-  # - url: /images/(.*\.(gif|png|jpg))$
-  #   static_files: static/\1
-  #   upload: static/.*\.(gif|png|jpg)$
 
 # Recommended file skipping declaration from the GAE tutorials
 skip_files:
@@ -63,4 +37,9 @@ skip_files:
   - ^testrunner\.py
   - ^grunt\.js
   - ^node_modules/(.*/)?
+  - ^tags$
+  - *\.swp$
+  - *\.swap$
+  - ^session.vim$
+  - ^\/\.tmp
 

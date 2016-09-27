@@ -231,8 +231,9 @@ module.exports = function (grunt) {
       options: {
         sassDir: '<%= yeoman.app %>/styles',
         cssDir: [
-'.tmp/styles',
-'<%= yeoman.app %>/styles'
+          '.tmp/styles',
+          //  I had to add this second one here so that appengine would get the styles as well
+          '<%= yeoman.app %>/styles'
         ],
         generatedImagesDir: '.tmp/images/generated',
         imagesDir: '<%= yeoman.app %>/images',
@@ -374,7 +375,7 @@ module.exports = function (grunt) {
     ngtemplates: {
       dist: {
         options: {
-          module: 'frontendApp',
+          module: 'appName',
           htmlmin: '<%= htmlmin.dist.options %>',
           usemin: 'scripts/scripts.js'
         },

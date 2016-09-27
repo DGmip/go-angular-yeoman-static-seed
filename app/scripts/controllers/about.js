@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc function
- * @name frontendApp.controller:AboutCtrl
+ * @name appName.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the frontendApp
+ * Controller of the appName
  */
-angular.module('frontendApp')
+angular.module('appName')
   .controller('AboutCtrl', function () {
   });
