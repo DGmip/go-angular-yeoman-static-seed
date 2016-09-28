@@ -42,4 +42,7 @@ skip_files:
   - *\.swap$
   - ^session.vim$
   - ^\/\.tmp
+  - (.*).sass
+  - (.*).ts
+
 
