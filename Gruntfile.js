@@ -230,11 +230,7 @@ module.exports = function (grunt) {
     compass: {
       options: {
         sassDir: '<%= yeoman.app %>/styles',
-        cssDir: [
-          '.tmp/styles',
-          //  I had to add this second one here so that appengine would get the styles as well
-          '<%= yeoman.app %>/styles'
-        ],
+        cssDir: '.tmp/styles',
         generatedImagesDir: '.tmp/images/generated',
         imagesDir: '<%= yeoman.app %>/images',
         javascriptsDir: '<%= yeoman.app %>/scripts',
